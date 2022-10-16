@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  padding: 20px 0;
+  position: relative;
+  justify-content: space-around;
+  height: 15vh;
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    background: var(--black);
+  }
+}

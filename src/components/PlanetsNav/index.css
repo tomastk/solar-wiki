@@ -1,0 +1,70 @@
+.planets {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 500px) {
+  .planets {
+    display: none;
+  }
+}
+
+.planet {
+  animation: appear .7s linear;
+  transition: transform .5s;
+  text-align: center;
+}
+
+.planet:hover {
+  transform: scale(1.1);
+}
+
+@keyframes appear {
+ 0% {
+  transform: translateY(-20%);
+ }
+ 100% {
+  opacity: translateY(0);
+ }
+}
+
+img {
+  object-fit: contain;
+  max-width: 100%;
+}
+
+.btn {
+  position: absolute;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  top: 45%;
+  font-size: 1.2rem;
+  padding: 20px;
+  background-color: black;
+  border-radius: 50%;
+  transition: all .4s;
+}
+
+.btn[data-disabled = false]:hover{
+  cursor: pointer;
+  color: black;
+  transform: scale(1.1);
+  background-color: white;
+}
+
+.btn[data-disabled = true]:hover {
+  cursor:not-allowed;
+}
+
+.btn-add {
+  right: -50px;
+}
+
+.btn-substract {
+  left: -50px;
+}

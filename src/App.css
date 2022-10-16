@@ -1,0 +1,164 @@
+:root {
+  --black: #1e1e1e;
+  --pd: 20px;
+  --h1-size: 56px; 
+  --h2-size: 45px;
+  --h3-size: 30px;
+  --p-size: 22px;
+}
+
+h3 {
+  font-size: var(--h3-size)
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'Segoe UI';
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 80%;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+@media screen and (max-width: 450px) {
+  .wrapper {
+    max-width: 90%;
+  }
+}
+
+
+.c-pointer {
+  cursor: pointer;
+}
+
+.only-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .only-desktop {
+    display: none;
+  } 
+}
+
+.menu-heading {
+  margin-left: 20px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.d-grid {
+  display: grid;
+  align-items: center;
+}
+
+.two-columns {
+  grid-template-columns: repeat(2, 1fr)
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.heading-1 {
+  font-size: 3rem;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.mb-20{
+  margin-bottom: 20px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.t-s {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+}
+
+.tac {
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .only-desktop {
+    display: none;
+  }
+}
+
+.center-content {
+  display: flex;
+  align-items: center;
+}
+
+.img {
+  text-align: center;
+  display: grid;
+  place-content: center;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .center-content {
+    justify-content: center;
+  }
+  .only-mobile {
+    display: block;
+  }
+}
+
+/* Styles for the main section */
+
+.main-section {
+  background-image: url('./img/solar-system-b.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.txt-wrapper {
+  max-width: 50%;
+  margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .txt-wrapper {
+    max-width: 90%;
+  }
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+
+.center {
+  text-align: center;
+}
+
+button[data-disabled = true] {
+  background-color: lightgray;
+}
+
+body {
+    background-image: url('./img/stars-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding-bottom: 30px;
+    color: white;
+    scroll-behavior: smooth;
+}
