@@ -1,9 +1,9 @@
 import React from 'react'
-import {NavLink as Link} from 'react-router-dom';
+import { NavLink as Link } from 'react-router-dom'
 import './index.css'
 
-const Navbar = ({showed}) => {
-  const navBarClassName = showed ? 'active' : '';
+const Navbar = ({ showed }) => {
+  const navBarClassName = showed ? 'active' : ''
 
   return (
     <nav className="nav">
@@ -37,4 +37,4 @@ const Navbar = ({showed}) => {
   )
 }
 
-export default Navbar;
+export default Navbar

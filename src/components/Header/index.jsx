@@ -4,7 +4,7 @@ import Logo from '../Logo'
 import Navbar from '../Navbar'
 import './index.css'
 
-const Header = ({updateMenu, showed}) => {
+const Header = ({ updateMenu, showed }) => {
   return (
     <header className="header">
       <Logo />

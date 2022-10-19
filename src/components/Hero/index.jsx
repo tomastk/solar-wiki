@@ -1,6 +1,6 @@
 import React from 'react'
 import './index.css'
-import {AsteroidIcon, PlanetsIcon, MoonIcon} from '../IconsComponent'
+import { AsteroidIcon, PlanetsIcon, MoonIcon, Comet } from '../IconsComponent'
 
 const Hero = () => {
   return (
@@ -14,7 +14,7 @@ const Hero = () => {
           </p>
         </div>
         <div className="fact">
-          <MoonIcon /> 
+          <MoonIcon />
           <p>
           + 200 lunas
           </p>
@@ -23,6 +23,12 @@ const Hero = () => {
           <AsteroidIcon />
           <p>
           1,113,527 <br />asteroides
+          </p>
+        </div>
+        <div className="fact">
+          <Comet />
+          <p>
+          3743 <br />cometas
           </p>
         </div>
       </div>

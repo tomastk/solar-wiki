@@ -16,7 +16,7 @@ const AboutSolarSystem = () => {
         </div>
         <p>{mpTexts.aboutContent}</p>
       </section>
-      <img src="./img/planets-ilustration.png" alt="Ilustración del Sistema Solar" class="decoration-img"/>
+      <img src="./img/planets-ilustration.png" alt="Ilustración del Sistema Solar" className="decoration-img"/>
       <section className="solar-system-facts">
         <h3 className="center mt-20">{mpTexts.subTitle[1]}</h3>
         <div className="datas wrapper">
