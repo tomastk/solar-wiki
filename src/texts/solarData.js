@@ -1,7 +1,7 @@
 const solarData = [
   {
     title: 'Uno de muchos',
-    content: 'Nuestro sistema solar está formado por una estrella, ocho planetas e imnumerables cuerpos más pequeños, como planetas enanos, asteroides y cometas.',
+    content: 'Nuestro sistema solar está formado por una estrella, ocho planetas e imnumerables cuerpos más pequeños, como planetas enanos, asteroides y cometas.'
   },
   {
     title: 'Encuentrame en el brazo de Orión',
@@ -34,8 +34,7 @@ const solarData = [
   {
     title: 'La vida como la conocemos',
     content: 'Nuestro sistema solar es el unico conocido que alberga vida. Hasta ahora solo sabemos de la vida en la Tierra.'
-  },
+  }
 ]
 
-
-export default solarData;
+export default solarData

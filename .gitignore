@@ -6,6 +6,9 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+.eslintrc.cjs
+.gitignore
+desktop.ini
 
 node_modules
 dist
