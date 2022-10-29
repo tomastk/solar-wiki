@@ -1,0 +1,53 @@
+.main {
+  min-height: 100vh;
+  background-image: url('./img/facts-section-bg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.bounce {
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-delay: .3s;
+}
+
+img {
+  max-width: 100%;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(-20px)
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.item {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+}
+
+@media screen and (max-width: 400px) {
+  .info {
+    grid-template-columns: 1fr;
+  }
+  .item {
+    margin: auto;
+    width: 70%;
+  }
+}

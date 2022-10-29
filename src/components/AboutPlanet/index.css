@@ -1,0 +1,10 @@
+.planet-info h2 {
+  text-align: center;
+}
+
+.planet-info p {
+  margin-bottom: 20px;
+  line-height: 1.8;
+  font-weight: 300;
+  font-size: 16px;
+}
