@@ -138,7 +138,8 @@ a:hover {
 /* Styles for the main section */
 
 .main-section {
-  background-image: url('./img/solar-system-b.jpg');
+  background-image: url('./img/solar-system-b.jpg'),
+  url('https://i.imgur.com/6VGo4gk.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -169,7 +170,8 @@ button[data-disabled = true] {
 }
 
 body {
-    background-image: url('./img/stars-background.jpg');
+    background-image: url('./img/stars-background.jpg'),
+    url('https://i.imgur.com/kdWDgsV.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
