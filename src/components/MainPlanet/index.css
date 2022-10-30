@@ -42,7 +42,7 @@ img {
   width: 250px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .info {
     grid-template-columns: 1fr;
   }
