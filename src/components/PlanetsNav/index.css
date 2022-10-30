@@ -13,22 +13,26 @@
 }
 
 .planet {
-  animation: appear .7s linear;
-  transition: transform .5s;
+  animation: appear .5s;
   text-align: center;
-}
-
-.planet:hover {
-  transform: scale(1.1);
 }
 
 @keyframes appear {
  0% {
-  transform: translateY(-20%);
+  transform: scale(0.5);
  }
  100% {
-  opacity: translateY(0);
+  opacity: scale(1);
  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(20px)
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 img {

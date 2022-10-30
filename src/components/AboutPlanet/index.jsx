@@ -1,5 +1,6 @@
 import React from 'react'
 import Fact from '../Fact'
+import { motion } from 'framer-motion'
 import './index.css'
 
 const AboutPlanet = ({ planet }) => {
@@ -7,7 +8,7 @@ const AboutPlanet = ({ planet }) => {
     <div className="txt-wrapper">
       <h2 className='mb-20 mt-20'>Sobre el planeta {planet.name}</h2>
       {planet.infoParagraphs.map((p, index) => {
-        return <p key={index}>{p}</p>
+        return <motion.p whileInView={{ x: 0, transition: { duration: 0.5, delay: 0 } }} initial={{ x: 120 }} key={index}>{p}</motion.p>
       })}
     </div>
     <h2>9 cosas que debes saber sobre {planet.name}</h2>

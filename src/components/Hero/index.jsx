@@ -1,11 +1,12 @@
 import React from 'react'
 import './index.css'
+import { motion } from 'framer-motion'
 import { AsteroidIcon, PlanetsIcon, MoonIcon, Comet } from '../IconsComponent'
 
 const Hero = () => {
   return (
     <div className="wrapper hero">
-      <h1 className="heading">El Sistema <br /> Solar</h1>
+      <motion.h1 className="heading" initial={{ x: -200 }} animate={{ x: 0 }} transition={{ duration: 1 }}>El Sistema <br /> Solar</motion.h1>
       <div className="facts">
         <div className="fact">
           <PlanetsIcon />

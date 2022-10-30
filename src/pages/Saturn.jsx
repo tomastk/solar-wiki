@@ -11,11 +11,13 @@ const Saturn = () => {
   return (
     <>
       <MainPlanet planet={saturn}/>
-      <AboutPlanet planet={saturn} />
-      <PopCulture planet={saturn} />
-      <PlanetsNav />
-      <MobileNav />
-      <Footer />
+      <div className="container">
+        <AboutPlanet planet={saturn} />
+        <PopCulture planet={saturn} />
+        <PlanetsNav />
+        <MobileNav />
+        <Footer />
+      </div>
     </>
   )
 }

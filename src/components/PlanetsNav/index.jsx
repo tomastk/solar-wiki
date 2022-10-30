@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { NavLink as Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 import { ArrowLeft, ArrowRight } from '../IconsComponent'
 import './index.css'
 import planetsDefault from '../../texts/planets.js'
@@ -50,17 +51,21 @@ const PlanetsNav = () => {
   }
 
   return <div className='wrapper'>
-    <h3 className='center mb-20'>Aterriza en otros planetas</h3>
-    <div className="planets only-desktop">
+    <motion.h3 whileInView={{ x: 0, transition: { duration: 0.5 } }} initial={{ x: 120 }} className='center mb-20'>Aterriza en otros planetas</motion.h3>
+    <motion.div layout className="planets only-desktop">
     {planets.map(planet => {
-      return <Link to={`/${planet.name.toLowerCase()}`} key={planet.position} className="planet">
-        <img width="300" height="300" src={planet.url} alt={planet.name + ' en fotografía'} />
-        <h3 className='center mt-20 mb-20 fs-20 t-s'>{planet.name}</h3>
-      </Link>
+      return (
+        <motion.div layoutId={planet.position} className="planet" key={planet.position} animation={{ transition: { delay: 1, duration: 2 } }}>
+        <Link to={`/${planet.name.toLowerCase()}`} className="planet">
+          <img width="300" height="300" src={planet.url} alt={planet.name + ' en fotografía'} />
+          <h3 className='center mt-20 mb-20 fs-20 t-s'>{planet.name}</h3>
+        </Link>
+        </motion.div>
+      )
     })}
       <button className="btn btn-add" onClick={addSliderIndex} data-disabled={disabled.add}><ArrowRight /></button>
       <button className="btn btn-substract"onClick={substractSliderIndex} data-disabled={disabled.substract}><ArrowLeft /></button>
-    </div>
+    </motion.div>
   </div>
 }
 

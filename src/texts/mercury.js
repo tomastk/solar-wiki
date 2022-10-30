@@ -22,11 +22,11 @@ const neptune = {
     },
     {
       title: 'Superficie áspera',
-      content: 'Mercurio es un planeta roco, más conocido como un planeta terrestre. Tiene una superficie sólida con cráteres, muy parecida a la Luna de la Tierra.'
+      content: 'Mercurio es un planeta rocoso, más conocido como un planeta terrestre. Tiene una superficie sólida con cráteres, muy parecida a la Luna de la Tierra.'
     },
     {
       title: 'No se puede respirar ahí',
-      content: 'La delgada atmósfera de Mercurio, o exósfera, está compuesta principalmente de oxigeno (O2), sodio, hidrógeno (H2) helio (HE) y potasio (K)'
+      content: 'La delgada atmósfera de Mercurio, o exósfera, está compuesta principalmente de oxigeno (O2), sodio, hidrógeno (H2), helio (HE) y potasio (K)'
     },
     {
       title: 'Sin lunas ni anillos',

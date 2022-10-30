@@ -25,11 +25,13 @@ const Home = () => {
         <Header updateMenu={updateMenu} showed={showed} />
         <Hero />
       </section>
-      <AboutSolarSystem />
-      <PlanetsNav />
-      <MobileNav />
-      <YoutubeVideo embedId="8dy27u_kX1I" />
-      <Footer />
+      <div className="container">
+        <AboutSolarSystem />
+        <PlanetsNav />
+        <MobileNav />
+        <YoutubeVideo embedId="8dy27u_kX1I" />
+        <Footer />
+      </div>
     </>
   )
 }
