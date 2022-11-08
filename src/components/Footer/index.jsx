@@ -21,8 +21,8 @@ const Footer = () => {
       </div>
       <div className="vertical-list">
         <h2>Enlaces de interés</h2>
-        <a href="#">Bibliografía</a>
-        <a href="#">Web de la NASA</a>
+        <Link key="Bibliografia" to="../bibliografia">Bibliografía</Link>
+        <a href="https://solarsystem.nasa.gov" target="_blank" rel="noreferrer">Web de la NASA</a>
       </div>
     </footer>
   )

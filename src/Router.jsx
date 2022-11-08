@@ -14,6 +14,7 @@ import Earth from './pages/Earth'
 import Jupiter from './pages/Jupiter'
 import Saturn from './pages/Saturn'
 import Uranus from './pages/Uranus'
+import Bibliography from './pages/Bibliography'
 
 const SiteRouter = () => {
   return (
@@ -29,6 +30,7 @@ const SiteRouter = () => {
         <Route path="/jupiter" exact element={<Jupiter />}></Route>
         <Route path="/saturno" exact element={<Saturn />}></Route>
         <Route path="/urano" exact element={<Uranus />}></Route>
+        <Route path="/bibliografia" exact element={<Bibliography />}></Route>
       </Routes>
     </Router>
   </>
